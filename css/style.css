@@ -72,6 +72,8 @@ header{
 
     text-decoration:none;
 
+    color:inherit;
+
 }
 
 .logo-title{
@@ -440,9 +442,9 @@ nav{
 
 .hero h1{
 
-    font-size:34px;
+    font-size:30px;
 
-    line-height:1.5;
+    line-height:1.4;
 
 }
 
