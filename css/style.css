@@ -57,18 +57,21 @@ header{
 
 }
 
-.logo img{
+.logo-icon{
 
-    height:55px;
+    height:58px;
+
+    width:auto;
 
 }
 
-/* ロゴ＋ブランド名 */
 .logo-link{
 
     display:flex;
 
     align-items:center;
+
+    gap:18px;
 
     text-decoration:none;
 
@@ -78,13 +81,13 @@ header{
 
 .logo-title{
 
-    margin-left:28px;
+    margin-left:0;
 
     font-size:32px;
 
     letter-spacing:8px;
 
-    font-weight:500;
+    font-weight:400;
 
     color:#333;
 
@@ -418,19 +421,15 @@ header{
 
 }
 
-.logo img{
+.logo-title{
 
-    height:42px;
+    display:none;
 
 }
 
-.logo-title{
+.logo-icon{
 
-    font-size:18px;
-
-    letter-spacing:4px;
-
-    margin-left:12px;
+    height:45px;
 
 }
 
