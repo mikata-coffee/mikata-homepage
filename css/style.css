@@ -288,12 +288,23 @@ section h2{
 ===================================== */
 
 .product {
-    padding: 120px 0;
+    padding: 120px 8%;
+}
+
+.product .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .product h2 {
+    font-size: 42px;
     margin-bottom: 70px;
 }
+
+
+/* ======================
+   商品1つ分
+======================= */
 
 .product-item {
     margin-bottom: 100px;
@@ -311,32 +322,39 @@ section h2{
 
 
 /* ======================
-   画像 ＋ 説明文
+   画像＋説明文
 ======================= */
 
 .product-content {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 60px;
 }
 
 
-/* 商品画像 */
+/* ======================
+   商品画像
+======================= */
 
 .product-image {
-    width: 360px;
+    width: 300px;
+    min-width: 300px;
     flex-shrink: 0;
 }
 
 .product-image img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 18px;
 }
 
 
-/* 商品説明 */
+/* ======================
+   商品説明
+======================= */
 
 .product-description {
     flex: 1;
@@ -365,7 +383,7 @@ section h2{
 ===================================== */
 
 .product-detail-section {
-    padding: 100px 0;
+    padding: 100px 8%;
 }
 
 .product-detail-section h2 {
@@ -385,16 +403,17 @@ section h2{
 
 
 /* =====================================
-   スマートフォン
+   PRODUCT スマートフォン
 ===================================== */
 
 @media screen and (max-width: 768px) {
 
     .product {
-        padding: 80px 0;
+        padding: 80px 25px;
     }
 
     .product h2 {
+        font-size: 32px;
         margin-bottom: 50px;
     }
 
@@ -411,20 +430,27 @@ section h2{
         font-size: 23px;
     }
 
-
-    /* 画像と文章を縦並び */
+    /* 画像と説明を縦並び */
 
     .product-content {
-        display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 25px;
     }
 
     .product-image {
         width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
+        min-width: 0;
+        max-width: 300px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-description {
+        width: 100%;
     }
 
     .product-description p {
@@ -432,11 +458,8 @@ section h2{
         line-height: 2;
     }
 
-
-    /* PRODUCT DETAIL */
-
     .product-detail-section {
-        padding: 80px 0;
+        padding: 80px 25px;
     }
 
     .product-detail h4 {
